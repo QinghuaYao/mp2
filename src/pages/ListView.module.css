@@ -1,0 +1,118 @@
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  
+  .search {
+    flex: 1 1 240px;
+    padding: 0.6rem 0.9rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .sortLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  .sortLabel select {
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  .orderButton {
+    padding: 0.55rem 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .count {
+    color: #666;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: 56px 4rem 1fr 1fr auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.25rem 1rem 0.25rem 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #fff;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .row:hover {
+    border-color: #ef5350;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .sprite {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .number {
+    color: #888;
+    font-variant-numeric: tabular-nums;
+  }
+  
+  .name {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .types {
+    display: flex;
+    gap: 0.3rem;
+  }
+  
+  .badge {
+    padding: 0.1rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+  }
+  
+  .meta {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .status {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 600px) {
+    .row {
+      grid-template-columns: 56px 1fr auto;
+    }
+    .types,
+    .meta {
+      display: none;
+    }
+  }
